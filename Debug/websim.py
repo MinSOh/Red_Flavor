@@ -218,7 +218,7 @@ inputs = ["open",
 
 def GetData(string):
     for i in range(len(inputs)):
-        if string == inputs:
+        if string == inputs[i]:
             SampleData = np.random.uniform(0, 1, totdi * totii)
             SampleData = np.reshape(SampleData, (totdi, totii))
             return SampleData
