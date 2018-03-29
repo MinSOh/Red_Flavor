@@ -203,6 +203,7 @@ inputs = ["open",
           "news_mins_5_chg",
           "news_mins_7_5_chg",
           "news_mins_10_chg",
+          "news_range_stddev",
           "news_mins_20_chg",
           "news_cap",
           "news_pe_ratio",
@@ -211,7 +212,6 @@ inputs = ["open",
           "news_high_exc_stddev",
           "news_low_exc_stddev",
           "news_vol_stddev",
-          "news_range_stddev",
           "news_atr_ratio",
           "news_eps_actual"
           ]
@@ -224,3 +224,5 @@ def GetData(string):
             return SampleData
     print("Error: GetData(" + string + ") -> There is no " + string)
     return None
+
+#test
